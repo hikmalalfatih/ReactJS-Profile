@@ -25,7 +25,7 @@ const Work = () => {
               <a
                 target="_blank"
                 rel="noreferrer noopener"
-                href="game.hikmalalfatih.repl.co"
+                href="https://game.hikmalalfatih.repl.co"
               >
                 <i class="uil uil-arrow-up-left"></i>
                 <span>Online Preview</span>
