@@ -25,7 +25,7 @@ const Work = () => {
               <a
                 target="_blank"
                 rel="noreferrer noopener"
-                href="https://hikmalalfatih.github.io/"
+                href="game.hikmalalfatih.repl.co"
               >
                 <i class="uil uil-arrow-up-left"></i>
                 <span>Online Preview</span>
@@ -35,8 +35,8 @@ const Work = () => {
           <div className="work__text">
             <span className="title__link">01.</span>
             <div className="work__subtitle">
-              <span className="title__link">Personal Profil</span>
-              <p>Web Portofolio</p>
+              <span className="title__link">Permainan Sederhana</span>
+              <p>Tebak Angka</p>
             </div>
           </div>
         </div>
