@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./footer.css";
-import picture from "../../assets/profileImage.jpeg";
+import picture from "../../assets/profileImage.JPG";
 
 const Footer = () => {
   return (
