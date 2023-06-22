@@ -16,10 +16,10 @@ const About = () => {
             Hello! I am Hikmal Alfatih, I am passionate about
             <span className="about__outline">
               {" "}
-              developing applications
+              problems with 
             </span>{" "}
-            both <span className="about__outline"> user interface</span> and
-            database <span className="about__outline"> management</span> system.
+            your <span className="about__outline"> Apple device</span> and
+            advance <span className="about__outline"> repair</span> android.
           </span>
           <span className="about__button">
             <Link to="/me">
