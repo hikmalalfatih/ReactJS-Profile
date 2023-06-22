@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-import picture from "../../assets/profileImage.jpeg";
+import picture from "../../assets/profileImage.JPG";
 
 import "./moreInfo.css";
 import { Link } from "react-router-dom";
@@ -22,12 +22,10 @@ const MoreInfo = () => {
           <div className="info__more">
             <img className="info__picture" src={picture} alt="" />
             <span>
-            In the workplace, I am an exceptional relationship-builder and communicator through fearless feedback and effective listening.
-            With these skills, I am enabled to continuously and comfortably influence and break down silos,
-            navigate conflict and problem solve to achieve win-win outcomes both within an organization and beyond. 
-            I am both a valuable contributor as well as incredibly self-motivated to succeed autonomously. 
-            I possess a strong background in IT, Sales, and Customer Service and I am always eager to take on new challenges 
-            and grow in whatever role I am in.
+              I am a professional certified technician for all Apple devices since 2022.
+              I am proficient in repairing and troubleshooting Apple software and hardware.
+              I have been involved in several official Apple service providers 
+              and have many customers who trust me to handle their Apple products.
             </span>
           </div>
           <a href="#info__contact">
@@ -65,17 +63,17 @@ const MoreInfo = () => {
               <a
                 target="_blank"
                 rel="noreferrer noopener"
-                href="https://drive.google.com/file/d/10gp7yppJlmyCRH_iUHKwpwRZLFS-r-Ox/view?usp=share_link"
+                href="https://drive.google.com/file/d/13QQTPeuV_KyC8hjwK8MEu-gCbnej9fxH/view?usp=sharing"
               >
-                Arabic Language{" "}
+                Academic Transcript{" "}
                 <i class="uil uil-arrow-up-right"></i>
               </a>
               <a
                 target="_blank"
                 rel="noreferrer noopener"
-                href="https://drive.google.com/file/d/1pDlWdxlIs43Gn9-qEgJxJg8qPvej39UA/view?usp=share_link"
+                href="https://drive.google.com/file/d/1KeKm4urNFo7IGHbsnc0UX60YpqZMBr72/view?usp=drive_link"
               >
-                Hafiz Quran{" "}
+                id Card{" "}
                 <i class="uil uil-arrow-up-right"></i>
               </a>
             </div>
