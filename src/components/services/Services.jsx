@@ -6,7 +6,7 @@ import "./services.css";
 const Services = () => {
   const { scrollYProgress } = useScroll();
   const technical = useTransform(scrollYProgress, [0, 1], [0, 800]);
-  const customer = useTransform(scrollYProgress, [0, 1], [0, 600]);
+  const problem = useTransform(scrollYProgress, [0, 1], [0, 600]);
   const troubleshoot = useTransform(scrollYProgress, [0, 1], [0, 400]);
   return (
     <section className="services" id="services">
@@ -31,9 +31,9 @@ const Services = () => {
               style={{ x: customer }}
               className="service__typo"
             >
-              customer relations -{" "}
-              <span className="typo__outline"> backend</span> relations -
-              customer relations
+              problem solve -{" "}
+              <span className="typo__outline"> problem</span> problem -
+              solve problem
             </motion.h1>
           </div>
           <div class="typo__filled">
@@ -51,17 +51,17 @@ const Services = () => {
 
         <div className="service__stack">
           <div className="stack__item">
-            <span>LCD</span>
-            <span>Battery</span>
-            <span>Express JS</span>
-            <span>Face id</span>
-            <span>Touch id</span>
+            <span>iOS</span>
+            <span>iPadOS</span>
+            <span>watchOS</span>
+            <span>macOS</span>
+            <span>tvOS</span>
           </div>
           <div className="stack__item">
+            <span>Screen</span>
+            <span>Battery</span>
             <span>Backglass</span>
-            <span>Housing</span>
             <span>Flexible</span>
-            <span>Camera</span>
           </div>
         </div>
       </div>
