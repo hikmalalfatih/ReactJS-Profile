@@ -16,7 +16,7 @@ const Services = () => {
             <motion.h1
               initial={{ x: -1800 }}
               animate={{ x: 0, transition: { duration: 0.8 } }}
-              style={{ x: fronted }}
+              style={{ x: technical }}
               className="service__typo"
             >
               technical engineering - technical{" "}
