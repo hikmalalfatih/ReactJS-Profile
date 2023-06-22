@@ -1,5 +1,5 @@
 import React from "react";
-import malih from "../../assets/malih.jpeg";
+import malih from "../../assets/malih.JPG";
 import "./work.css";
 
 const Work = () => {
