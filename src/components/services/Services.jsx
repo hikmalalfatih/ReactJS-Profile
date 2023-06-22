@@ -28,7 +28,7 @@ const Services = () => {
             <motion.h1
               initial={{ x: -1800 }}
               animate={{ x: 0, transition: { duration: 0.8 } }}
-              style={{ x: customer }}
+              style={{ x: problem }}
               className="service__typo"
             >
               problem solve -{" "}
