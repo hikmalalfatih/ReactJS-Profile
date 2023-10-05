@@ -19,7 +19,7 @@ const Loader = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 0.9 },
+            transition: { delay: 0.5 },
             transitionEnd: {
               display: "none",
             },
