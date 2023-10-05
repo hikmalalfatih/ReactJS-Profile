@@ -19,7 +19,7 @@ const Loader = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 0.5 },
+            transition: { delay: 0.9 },
             transitionEnd: {
               display: "none",
             },
@@ -32,7 +32,7 @@ const Loader = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 0.8 },
+            transition: { delay: 1.8 },
             transitionEnd: {
               display: "none",
             },
@@ -45,7 +45,7 @@ const Loader = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 1.1 },
+            transition: { delay: 2.7 },
             transitionEnd: {
               display: "none",
             },
@@ -58,7 +58,7 @@ const Loader = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 1.4 },
+            transition: { delay: 3.6 },
             transitionEnd: {
               display: "none",
             },
@@ -69,7 +69,7 @@ const Loader = () => {
         </motion.span>
         <motion.span
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { delay: 1.7 } }}
+          animate={{ opacity: 1, transition: { delay: 4.5 } }}
           className="loader__text"
         >
           Привет
