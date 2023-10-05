@@ -13,7 +13,7 @@ const Header = () => {
         <div class="text__filled">
           <motion.h1
             initial={{ x: -1800 }}
-            animate={{ x: 0, transition: { duration: 0.8, delay: 2 } }}
+            animate={{ x: 0, transition: { duration: 0.8, delay: 5 } }}
             style={{ x: right }}
             className="title"
           >
@@ -23,7 +23,7 @@ const Header = () => {
         <div class="text__outline">
           <motion.h1
             initial={{ x: -1800 }}
-            animate={{ x: 0, transition: { duration: 0.8, delay: 2 } }}
+            animate={{ x: 0, transition: { duration: 0.8, delay: 5 } }}
             style={{ x: right }}
             className="title"
           >
@@ -33,7 +33,7 @@ const Header = () => {
         <div class="text__filled to-left">
           <motion.h1
             initial={{ x: 1800 }}
-            animate={{ x: 0, transition: { duration: 0.8, delay: 2 } }}
+            animate={{ x: 0, transition: { duration: 0.8, delay: 5 } }}
             style={{ x: left }}
             className="title"
           >
