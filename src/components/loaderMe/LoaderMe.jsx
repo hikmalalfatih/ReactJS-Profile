@@ -10,7 +10,7 @@ const LoaderMe = () => {
       animate={{
         y: -1000,
         opacity: 1,
-        transition: { duration: 1, delay: 2 },
+        transition: { duration: 1, delay: 5 },
       }}
       exit={{ y: window.innerWidth }}
       className="loader__me"
