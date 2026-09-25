@@ -45,7 +45,7 @@ h1 {
 .info__more {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
 }

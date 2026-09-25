@@ -34,7 +34,7 @@
   text-transform: uppercase;
   font-style: var(--font-style-typography);
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   transform: translateX(-100%);
   color: white;
 }
@@ -100,7 +100,7 @@
     flex-direction: row;
     gap: 1rem;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     font-size: 0.9rem;
     color: var(--text-color);
   }
@@ -116,8 +116,8 @@
   .stack__item span {
     width: 100%;
     display: flex;
-    align-items: start;
-    justify-content: start;
+    align-items: flex-start;
+    justify-content: flex-start;
     border: 1px solid white;
     padding: 0.5rem 1rem;
     border-radius: 25px;
