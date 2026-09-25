@@ -46,7 +46,14 @@ module.exports = async function handler(request, response) {
     );
 
     if (!telegramResponse.ok) {
-      return response.status(502).json({ error: "Telegram rejected the message." });
+      const telegramResult = await telegramResponse.json();
+      return response.status(502).json({
+        error: "Telegram rejected the message.",
+        details:
+          typeof telegramResult.description === "string"
+            ? telegramResult.description
+            : "Telegram returned an unspecified error.",
+      });
     }
 
     return response.status(200).json({ success: true });
