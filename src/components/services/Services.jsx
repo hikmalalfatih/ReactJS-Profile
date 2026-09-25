@@ -12,7 +12,7 @@ const Services = () => {
     <section className="services" id="services">
       <div className="service__container">
         <div className="typo__service">
-          <div class="typo__filled">
+          <div className="typo__filled">
             <motion.h1
               initial={{ x: -1800 }}
               animate={{ x: 0, transition: { duration: 0.8 } }}
@@ -24,7 +24,7 @@ const Services = () => {
               engineering
             </motion.h1>
           </div>
-          <div class="typo__filled">
+          <div className="typo__filled">
             <motion.h1
               initial={{ x: -1800 }}
               animate={{ x: 0, transition: { duration: 0.8 } }}
@@ -36,7 +36,7 @@ const Services = () => {
               solve problem
             </motion.h1>
           </div>
-          <div class="typo__filled">
+          <div className="typo__filled">
             <motion.h1
               initial={{ x: -1800 }}
               animate={{ x: 0, transition: { duration: 0.8 } }}
@@ -58,10 +58,10 @@ const Services = () => {
             <span>tvOS</span>
           </div>
           <div className="stack__item">
-            <span>Screen</span>
-            <span>Battery</span>
-            <span>Backglass</span>
-            <span>Flexible</span>
+            <span>IC Replacement</span>
+            <span>Soldering</span>
+            <span>Reballing</span>
+            <span>SwapBoard</span>
           </div>
         </div>
       </div>

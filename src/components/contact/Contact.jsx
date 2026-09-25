@@ -1,51 +1,48 @@
-import { React, useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { useFormik } from "formik";
-import { Toaster } from "react-hot-toast";
-
-import mailValidate from "../../helpers/validate";
+import { useState } from "react";
+import { Toaster, toast } from "react-hot-toast";
 
 import "./contact.css";
 
 const Contact = () => {
-  const form = useRef();
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [isSending, setIsSending] = useState(false);
 
-  const formEmail = (e) => {
-    e.preventDefault();
-    sendEmail();
-    formik.handleSubmit();
+  const handleChange = (event) => {
+    setFormData((current) => ({
+      ...current,
+      [event.target.name]: event.target.value,
+    }));
   };
 
-  const sendEmail = (e) => {
-    emailjs
-      .sendForm(
-        "service_8djdo49",
-        "template_r08tqjr",
-        form.current,
-        "rvm20rt_U6sQ5wPMD"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+  const formEmail = async (event) => {
+    event.preventDefault();
+    const { name, email, message } = formData;
 
-  const formik = useFormik({
-    initialValues: {
-      name: "",
-      email: "",
-      subject: "",
-      company: "",
-      message: "",
-    },
-    validate: mailValidate,
-    validateOnBlur: false,
-    validateOnChange: false,
-  });
+    if (!name.trim() || !email.trim() || !message.trim()) {
+      toast.error("Please complete all fields.");
+      return;
+    }
+
+    setIsSending(true);
+    try {
+      const response = await fetch("/api/send-message", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: name.trim(), email: email.trim(), message: message.trim() }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Message could not be sent.");
+      }
+
+      toast.success("Message sent successfully.");
+      setFormData({ name: "", email: "", message: "" });
+    } catch {
+      toast.error("Unable to send the message. Please try again.");
+    } finally {
+      setIsSending(false);
+    }
+  };
 
   return (
     <section className="contact">
@@ -55,52 +52,41 @@ const Contact = () => {
           <h1> Let's work together and create something amazing</h1>
         </div>
         <div className="contact__link">
-          <form ref={form} onSubmit={formEmail}>
+          <form onSubmit={formEmail}>
             <div className="form__initial">
               <input
-                {...formik.getFieldProps("name")}
+                value={formData.name}
+                onChange={handleChange}
                 type="text"
-                className="input-user"
                 placeholder="Name"
                 name="name"
                 id="name"
+                autoComplete="name"
+                required
               />
               <input
-                {...formik.getFieldProps("email")}
+                value={formData.email}
+                onChange={handleChange}
                 type="email"
-                className="input-user"
                 placeholder="Email"
                 name="email"
                 id="email"
-              />{" "}
-              <input
-                {...formik.getFieldProps("subject")}
-                type="text"
-                className="input-user"
-                placeholder="Subject"
-                name="subject"
-                id="subject"
-              />
-              <input
-                {...formik.getFieldProps("company")}
-                type="text"
-                className="input-user"
-                placeholder="Company"
-                name="company"
-                id="company"
+                autoComplete="email"
+                required
               />
             </div>
             <textarea
-              {...formik.getFieldProps("message")}
+              value={formData.message}
+              onChange={handleChange}
               placeholder="Message"
-              className="input-user"
               rows="3"
               name="message"
               id="message"
-            ></textarea>
+              required
+            />
 
-            <button className="contact__email" value="Send" type="submit">
-              Send it!
+            <button className="contact__email" type="submit" disabled={isSending}>
+              {isSending ? "Sending..." : "Send message"}
             </button>
           </form>
         </div>

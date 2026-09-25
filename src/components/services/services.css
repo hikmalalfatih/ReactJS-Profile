@@ -26,7 +26,7 @@
 
 .service__typo {
   white-space: nowrap;
-  font-size: 5rem;
+  font-size: clamp(3rem, 8vw, 5rem);
   transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -70,6 +70,12 @@
 @media screen and (max-width: 992px) {
 }
 @media screen and (max-width: 768px) {
+  .service__container {
+    padding: 7rem 1.5rem;
+  }
+  .service__stack {
+    font-size: 1.2rem;
+  }
 }
 @media screen and (max-width: 576px) {
   .service__typography {
@@ -92,10 +98,10 @@
   .service__stack {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
     align-items: start;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--text-color);
   }
 
@@ -108,7 +114,7 @@
   }
 
   .stack__item span {
-    width: 120%;
+    width: 100%;
     display: flex;
     align-items: start;
     justify-content: start;

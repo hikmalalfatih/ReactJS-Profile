@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  padding: 3rem 3rem 1.5rem 3rem;
+  padding: 3rem clamp(1.25rem, 6vw, 3rem) 1.5rem;
   background-color: #181818;
 }
 
@@ -23,7 +23,7 @@ footer {
   align-items: center;
   gap: 1.5rem;
   width: 100%;
-  height: 30vh;
+  min-height: 30vh;
 }
 
 .footer__title {
@@ -92,6 +92,9 @@ footer {
 @media screen and (max-width: 992px) {
 }
 @media screen and (max-width: 768px) {
+  .footer__button {
+    right: 4rem;
+  }
 }
 @media screen and (max-width: 576px) {
   .footer__main {
@@ -108,7 +111,8 @@ footer {
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 0.62rem;
+    font-size: 0.7rem;
+    text-align: center;
   }
   .footer__contact {
     display: flex;
@@ -134,7 +138,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin-bottom: 5rem;
-    line-height: 0.5rem;
+    line-height: 1rem;
   }
   .footer__section {
     display: flex;

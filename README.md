@@ -1,5 +1,17 @@
 # Getting Started with Create React App
 
+## Telegram contact messages
+
+The contact form sends messages through the Vercel function at
+`/api/send-message`. Before deploying, create a Telegram bot with BotFather,
+send it a message from your Telegram account, and configure these Vercel
+environment variables:
+
+- `TELEGRAM_BOT_TOKEN`: the token provided by BotFather.
+- `TELEGRAM_CHAT_ID`: the chat ID that should receive portfolio messages.
+
+Use `.env.example` as a local reference. Never commit the real token.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

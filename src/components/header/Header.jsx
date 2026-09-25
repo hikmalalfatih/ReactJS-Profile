@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <section className="header" id="header">
       <div className="header__hero">
-        <div class="text__filled">
+        <div className="text__filled">
           <motion.h1
             initial={{ x: -1800 }}
             animate={{ x: 0, transition: { duration: 0.8, delay: 5 } }}
@@ -20,7 +20,7 @@ const Header = () => {
             Apple Device
           </motion.h1>
         </div>
-        <div class="text__outline">
+        <div className="text__outline">
           <motion.h1
             initial={{ x: -1800 }}
             animate={{ x: 0, transition: { duration: 0.8, delay: 5 } }}
@@ -30,7 +30,7 @@ const Header = () => {
             Apple Device
           </motion.h1>
         </div>
-        <div class="text__filled to-left">
+        <div className="text__filled to-left">
           <motion.h1
             initial={{ x: 1800 }}
             animate={{ x: 0, transition: { duration: 0.8, delay: 5 } }}
@@ -40,7 +40,7 @@ const Header = () => {
             Technician
           </motion.h1>
         </div>
-        <div class="text__outline to-left">
+        <div className="text__outline to-left">
           <motion.h1
             initial={{ x: 1800 }}
             animate={{ x: 0, transition: { duration: 0.8, delay: 5 } }}

@@ -25,9 +25,9 @@ const Work = () => {
               <a
                 target="_blank"
                 rel="noreferrer noopener"
-                href="https://game.hikmalalfatih.repl.co"
+                href="https://maleyxc.vercel.app/"
               >
-                <i class="uil uil-arrow-up-left"></i>
+                <i className="uil uil-arrow-up-left"></i>
                 <span>Online Preview</span>
               </a>
             </div>
@@ -35,8 +35,8 @@ const Work = () => {
           <div className="work__text">
             <span className="title__link">01.</span>
             <div className="work__subtitle">
-              <span className="title__link">Permainan Sederhana</span>
-              <p>Tebak Angka</p>
+              <span className="title__link">Pasar Keuangan</span>
+              <p>Financial Market analysis and visualization</p>
             </div>
           </div>
         </div>

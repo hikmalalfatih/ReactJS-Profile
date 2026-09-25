@@ -23,7 +23,7 @@ const About = () => {
           </span>
           <span className="about__button">
             <Link to="/me">
-              Read More About Me <i class="uil uil-arrow-up-right"></i>
+              Read More About Me <i className="uil uil-arrow-up-right"></i>
             </Link>
           </span>
         </div>

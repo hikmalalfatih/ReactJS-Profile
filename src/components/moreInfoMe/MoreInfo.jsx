@@ -14,7 +14,7 @@ const MoreInfo = () => {
     <section className="info">
       <div className="back__button">
         <Link to="/">
-          <i class="uil uil-angle-left-b"></i>
+          <i className="uil uil-angle-left-b"></i>
         </Link>
       </div>
       <div className="info__container">
@@ -29,7 +29,7 @@ const MoreInfo = () => {
             </span>
           </div>
           <a href="#info__contact">
-            Feel free to contact me <i class="uil uil-arrow-up-right"></i>
+            Feel free to contact me <i className="uil uil-arrow-up-right"></i>
           </a>
           <div className="info__sosmed">
             <span>Also available on</span>
@@ -38,21 +38,21 @@ const MoreInfo = () => {
               rel="noreferrer noopener"
               href="https://wa.me/6281903031378/?text=Hello%20Hikmal"
             >
-              WhatsApp <i class="uil uil-arrow-up-right"></i>
+              WhatsApp <i className="uil uil-arrow-up-right"></i>
             </a>
             <a
               target="_blank"
               rel="noreferrer noopener"
               href="https://instagram.com/hikmalalfatih05"
             >
-              Instagram <i class="uil uil-arrow-up-right"></i>
+              Instagram <i className="uil uil-arrow-up-right"></i>
             </a>
             <a
               target="_blank"
               rel="noreferrer noopener"
               href="https://www.linkedin.com/in/hikmal-alfatih-ba264a148"
             >
-              LinkedIn <i class="uil uil-arrow-up-right"></i>
+              LinkedIn <i className="uil uil-arrow-up-right"></i>
             </a>
           </div>
         </div>
@@ -63,34 +63,26 @@ const MoreInfo = () => {
               <a
                 target="_blank"
                 rel="noreferrer noopener"
-                href="https://drive.google.com/file/d/13QQTPeuV_KyC8hjwK8MEu-gCbnej9fxH/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Chml6SGk3UtQz0rneIVayaweMNn_HBbj/view?usp=sharing"
               >
-                Academic Transcript{" "}
-                <i class="uil uil-arrow-up-right"></i>
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer noopener"
-                href="https://drive.google.com/file/d/1KeKm4urNFo7IGHbsnc0UX60YpqZMBr72/view?usp=drive_link"
-              >
-                id Card{" "}
-                <i class="uil uil-arrow-up-right"></i>
+                Machine Expert{" "}
+                <i className="uil uil-arrow-up-right"></i>
               </a>
             </div>
           </div>
           <div className="info__item">
             <h1>Experience</h1>
             <div className="info__detail">
-              <a target="_blank" rel="noreferrer noopener" href="">
-                Intern - Technician - PT. iColor Digital Indonesia{" "}
-                <i class="uil uil-arrow-up-right"></i>
+              <a target="_blank" rel="noreferrer noopener" href="https://drive.google.com/file/d/14_b89l3c8n7KDSrPBJA9m7_TZH_fj6GJ/view?usp=sharing">
+                Machine Expert - Applenesia{" "}
+                <i className="uil uil-arrow-up-right"></i>
               </a>
             </div>
           </div>
         </div>
       </div>
       <div className="info__typography">
-        <div class="typo__filled">
+        <div className="typo__filled">
           <motion.h1
             initial={{ x: -1800 }}
             animate={{ x: 0, transition: { duration: 0.8 } }}
@@ -104,7 +96,7 @@ const MoreInfo = () => {
             <span className="typo__outline">me</span> -
           </motion.h1>
         </div>
-        <div class="typo__filled">
+        <div className="typo__filled">
           <motion.h1
             initial={{ x: -1800 }}
             animate={{ x: 0, transition: { duration: 0.8 } }}

@@ -33,23 +33,16 @@ const Footer = () => {
             <a
               target="_blank"
               rel="noreferrer noopener"
-              href="https://instagram.com/hikmalalfatih05"
+              href="https://instagram.com/hikmalalfatih"
             >
               Instagram
             </a>
             <a
               target="_blank"
               rel="noreferrer noopener"
-              href="https://youtube.com/@hikmalalfatih9279"
+              href="https://youtube.com/@hikmalalfatih"
             >
               YouTube
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer noopener"
-              href="https://github.com/hikmalalfatih"
-            >
-              GitHub
             </a>
           </div>
           <div className="footer__section">
@@ -63,7 +56,7 @@ const Footer = () => {
             <a
               target="_blank"
               rel="noreferrer noopener"
-              href="https://www.tiktok.com/@hikmal-alfatih-ba264a148"
+              href="https://www.tiktok.com/@hikmalalfatih"
             >
               TikTok
             </a>
